@@ -1,0 +1,15 @@
+brand_group,metric,value
+Tesla,sample_vehicles,100000.0
+Non-Tesla BEVs,sample_vehicles,100000.0
+Tesla,annual_miles_per_vehicle,8900.0
+Non-Tesla BEVs,annual_miles_per_vehicle,8900.0
+Tesla,weighted_kwh_per_100_miles,26.7748
+Non-Tesla BEVs,weighted_kwh_per_100_miles,31.8751
+Tesla,annual_kwh_per_vehicle,2382.9536
+Non-Tesla BEVs,annual_kwh_per_vehicle,2836.8847
+Tesla,sample_annual_gwh,238.2954
+Non-Tesla BEVs,sample_annual_gwh,283.6885
+Tesla,sample_daily_mwh,652.864
+Non-Tesla BEVs,sample_daily_mwh,777.229
+Tesla,avg_continuous_mw,27.2027
+Non-Tesla BEVs,avg_continuous_mw,32.3845

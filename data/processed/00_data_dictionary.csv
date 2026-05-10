@@ -1,0 +1,14 @@
+file,column,definition,unit
+01_like_for_like_annual_energy.csv,brand_group,Vehicle group in the controlled comparison,
+01_like_for_like_annual_energy.csv,sample_vehicles,Number of vehicles in the controlled sample,vehicles
+01_like_for_like_annual_energy.csv,annual_miles_per_vehicle,Annual mileage held constant across groups,miles/year
+01_like_for_like_annual_energy.csv,weighted_kwh_per_100_miles,Weighted vehicle-mix electricity consumption,kWh/100 miles
+01_like_for_like_annual_energy.csv,annual_kwh_per_vehicle,Estimated yearly electricity use per vehicle,kWh/year
+01_like_for_like_annual_energy.csv,sample_annual_gwh,Estimated yearly electricity use for the 100000-vehicle sample,GWh/year
+01_like_for_like_annual_energy.csv,sample_daily_mwh,Estimated average daily electricity use for the 100000-vehicle sample,MWh/day
+01_like_for_like_annual_energy.csv,avg_continuous_mw,Annual energy converted into an average continuous load equivalent,MW
+02_like_for_like_peak_load_scenarios.csv,charging_profile,Charging scenario applied identically to Tesla and non-Tesla BEV samples,
+02_like_for_like_peak_load_scenarios.csv,Tesla,Estimated Tesla sample load during the peak window,MW
+02_like_for_like_peak_load_scenarios.csv,Non-Tesla BEVs,Estimated non-Tesla BEV sample load during the peak window,MW
+02_like_for_like_peak_load_scenarios.csv,Non-Tesla minus Tesla MW,Additional peak load from non-Tesla sample versus Tesla sample,MW
+02_like_for_like_peak_load_scenarios.csv,Tesla lower by %,Percentage by which Tesla sample load is lower than non-Tesla sample load,%

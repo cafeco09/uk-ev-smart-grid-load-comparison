@@ -1,10 +1,33 @@
 # Tesla vs Non-Tesla BEVs: Like-for-like UK smart-grid load
 
-This repo compares **Tesla BEVs** and **non-Tesla BEVs** under identical smart-grid conditions.
+This repository contains a controlled UK smart-grid simulation comparing **Tesla BEVs** and **non-Tesla BEVs** under identical conditions.
 
 The purpose is to remove the misleading effect of total fleet size and ask:
 
 > If both groups had the same number of vehicles, same mileage and same charging behaviour, which vehicle mix would place more load on the power grid?
+
+This is **not an endorsement of Tesla**. The research question is about whether efficient engineering can reduce annual energy demand and peak-period grid pressure when EVs scale.
+
+## Dataset
+
+The actual processed dataset behind the charts is included in this repo.
+
+| Dataset | Link |
+|---|---|
+| Data dictionary | [`data/processed/00_data_dictionary.csv`](data/processed/00_data_dictionary.csv) |
+| Annual energy comparison | [`data/processed/01_like_for_like_annual_energy.csv`](data/processed/01_like_for_like_annual_energy.csv) |
+| Peak-load scenarios | [`data/processed/02_like_for_like_peak_load_scenarios.csv`](data/processed/02_like_for_like_peak_load_scenarios.csv) |
+| Annual energy long form | [`data/processed/03_annual_energy_long_form.csv`](data/processed/03_annual_energy_long_form.csv) |
+| Peak-load long form | [`data/processed/04_peak_load_long_form.csv`](data/processed/04_peak_load_long_form.csv) |
+| Model assumptions | [`data/processed/05_model_assumptions.csv`](data/processed/05_model_assumptions.csv) |
+
+## Final charts
+
+The final chart outputs are stored in:
+
+[`outputs/infographics/`](outputs/infographics/)
+
+![Summary infographic](outputs/infographics/00_summary_infographic.png)
 
 ## Main result
 
@@ -14,10 +37,10 @@ Controlled sample:
 - 100,000 non-Tesla BEVs
 - 8,900 miles per vehicle per year
 - Same weekday 4pm–10pm peak window
-- Same smart-charging profiles
-- Same peak-shifting behaviour
+- Same charging behaviour
+- Same smart-charging profiles and peak-shifting assumptions
 
-Only the **vehicle-mix efficiency** differs.
+Only the **weighted vehicle-mix efficiency** differs.
 
 | Group | Weighted efficiency | Annual kWh/vehicle | Annual GWh for 100k vehicles |
 |---|---:|---:|---:|
@@ -41,11 +64,16 @@ This does **not** prove Tesla owners charge at better times. It isolates the veh
 ## Folder structure
 
 ```text
-tesla_vs_non_tesla_smart_grid_repo/
+.
 ├── README.md
-├── requirements.txt
 ├── data/
 │   └── processed/
+│       ├── 00_data_dictionary.csv
+│       ├── 01_like_for_like_annual_energy.csv
+│       ├── 02_like_for_like_peak_load_scenarios.csv
+│       ├── 03_annual_energy_long_form.csv
+│       ├── 04_peak_load_long_form.csv
+│       └── 05_model_assumptions.csv
 ├── docs/
 │   ├── METHODOLOGY.md
 │   └── SOURCES_AND_LIMITATIONS.md
@@ -55,23 +83,3 @@ tesla_vs_non_tesla_smart_grid_repo/
 └── src/
     ├── build_like_for_like_model.py
     └── make_infographics.py
-```
-
-## Run locally
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-python src/build_like_for_like_model.py
-python src/make_infographics.py
-```
-
-## Infographics
-
-The infographic outputs are saved in:
-
-```text
-outputs/infographics/
-```

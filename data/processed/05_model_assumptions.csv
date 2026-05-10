@@ -1,0 +1,7 @@
+field,value,unit,notes
+sample_vehicles_each,100000,vehicles,Controlled like-for-like sample size for Tesla and non-Tesla BEVs.
+annual_miles_per_vehicle,8900,miles/year,Held constant for both groups.
+peak_window,weekday 4pm-10pm,time window,Held constant for all peak-load scenarios.
+charging_behaviour,same for both groups,assumption,The model isolates vehicle-mix efficiency not owner behaviour.
+tesla_weighted_efficiency,26.7748,kWh/100 miles,Weighted Tesla vehicle-mix efficiency used in the controlled model.
+non_tesla_weighted_efficiency,31.8751,kWh/100 miles,Weighted non-Tesla BEV vehicle-mix efficiency used in the controlled model.

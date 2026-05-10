@@ -1,0 +1,13 @@
+charging_profile,metric,value
+Smart/off-peak,Tesla,12.622
+Central smart-grid proxy,Tesla,28.944
+Unmanaged/high peak,Tesla,51.141
+Smart/off-peak,Non-Tesla BEVs,15.026
+Central smart-grid proxy,Non-Tesla BEVs,34.457
+Unmanaged/high peak,Non-Tesla BEVs,60.883
+Smart/off-peak,Non-Tesla minus Tesla MW,2.404
+Central smart-grid proxy,Non-Tesla minus Tesla MW,5.513
+Unmanaged/high peak,Non-Tesla minus Tesla MW,9.742
+Smart/off-peak,Tesla lower by %,15.998935
+Central smart-grid proxy,Tesla lower by %,15.999652
+Unmanaged/high peak,Tesla lower by %,16.001183
