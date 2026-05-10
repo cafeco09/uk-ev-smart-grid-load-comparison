@@ -1,0 +1,7 @@
+brand_group,sample_vehicles,charging_profile,peak_window,estimated_peak_load_mw
+Tesla,100000,Smart/off-peak,Weekday 4pm-10pm,12.622056401826484
+Tesla,100000,Central smart-grid proxy,Weekday 4pm-10pm,28.943681059360724
+Tesla,100000,Unmanaged/high peak,Weekday 4pm-10pm,51.141090593607295
+Non-Tesla BEVs,100000,Smart/off-peak,Weekday 4pm-10pm,15.026417004566213
+Non-Tesla BEVs,100000,Central smart-grid proxy,Weekday 4pm-10pm,34.45712864840182
+Non-Tesla BEVs,100000,Unmanaged/high peak,Weekday 4pm-10pm,60.88289648401826

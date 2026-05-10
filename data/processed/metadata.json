@@ -1,0 +1,8 @@
+{
+  "project": "Tesla vs Non-Tesla BEV Smart Grid Load: Like-for-like UK simulation",
+  "sample_size_each": 100000,
+  "annual_miles_per_vehicle": 8900,
+  "peak_window": "Weekday 4pm-10pm",
+  "core_result": "Under the same sample size, mileage and charging behaviour, the non-Tesla BEV sample draws about 16% more electricity than the Tesla sample because the wider non-Tesla vehicle mix is less efficient.",
+  "caveat": "This is a controlled simulation. It does not observe real brand-level private charging behaviour."
+}
